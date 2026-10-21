@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive personal portfolio showcasing projects, skills, and contact information.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Alex Morgan | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Alex Morgan home"><span class="brand-mark">A</span><span>alex<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
+        <h1>Design-minded<br>developer building<br><span class="gradient-text">for the web.</span></h1>
+        <p class="hero-description">I turn thoughtful ideas into fast, accessible, and delightful digital experiences. I care about the details—and the people using what I build.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><div class="avatar-stack" aria-hidden="true"><span>AM</span><span>UI</span><span>JS</span></div><p><strong>Curious by nature.</strong><br><span>Always learning, always shipping.</span></p></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract portfolio artwork">
+        <div class="art-glow"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card card-back"><span class="tiny-label">CURRENT FOCUS</span><strong>Interfaces<br>that feel right.</strong><span class="card-line"></span><span class="card-micro">UI / UX · FRONTEND</span></div>
+        <div class="art-card card-front"><div class="code-top"><span></span><span></span><span></span><small>hello-world.js</small></div><div class="code-lines"><p><span class="code-purple">const</span> <span class="code-blue">ideas</span> = <span class="code-orange">"good"</span>;</p><p><span class="code-purple">function</span> <span class="code-blue">build</span>() {</p><p class="indent">return <span class="code-green">"something useful"</span>;</p><p>}</p><p class="code-comment">// keep making it better ✦</p></div><div class="code-footer"><span>● Online</span><span>v.01</span></div></div>
+        <div class="floating-chip chip-one">✳ Creative</div><div class="floating-chip chip-two">{"</>"} Builder</div><div class="art-star star-one">✦</div><div class="art-star star-two">✳</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section section-muted" id="about">
+      <div class="container about-grid">
+        <div><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Good work starts<br>with <span class="gradient-text">curiosity.</span></h2></div>
+        <div class="about-content"><p class="lead">Hey, I'm Alex—a frontend developer who loves making the complex feel simple.</p><p>I enjoy combining clean code with considered design to build websites that are useful, inclusive, and a joy to use. From the first sketch to the final responsive breakpoint, I believe every detail should have a purpose.</p><div class="about-facts"><div><strong>02+</strong><span>Years learning</span></div><div><strong>12</strong><span>Projects explored</span></div><div><strong>∞</strong><span>Things to learn</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading"><div><p class="eyebrow">02 / WHAT I BRING</p><h2>Tools of the <span class="gradient-text">trade.</span></h2></div><p class="section-intro">A practical toolkit for taking ideas from a blank canvas to a polished experience.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon icon-purple">⌘</div><h3>Frontend development</h3><p>Responsive, accessible interfaces with reusable components and maintainable code.</p><div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-cyan">◈</div><h3>UI & visual design</h3><p>Clear visual hierarchy, thoughtful spacing, useful interactions, and consistent systems.</p><div class="tag-list"><span>Figma</span><span>Wireframes</span><span>Design systems</span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-orange">⌁</div><h3>Workflow & quality</h3><p>Version control, debugging, performance basics, and iterative improvements.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>DevTools</span><span>SEO basics</span></div></article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="projects">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I've <span class="gradient-text">made.</span></h2></div><p class="section-intro">A few concepts that show how I think, build, and solve problems.</p></div>
+        <div class="projects-grid">
+          <article class="project-card project-featured"><div class="project-visual visual-dashboard"><div class="mock-window"><div class="mock-bar"><i></i><i></i><i></i><span>orbit.analytics</span></div><div class="mock-content"><div class="mock-sidebar"></div><div class="mock-main"><div class="mock-heading"></div><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div></div><span class="visual-badge">01 / DASHBOARD UI</span></div><div class="project-info"><div><p class="project-type">PRODUCT DESIGN · FRONTEND</p><h3>Orbit Analytics</h3><p>A clean dashboard concept that makes complex metrics easier to understand at a glance.</p></div><a class="round-link" href="#contact" aria-label="Ask me about Orbit Analytics">↗</a></div><div class="project-tags"><span>CSS Grid</span><span>Data UI</span><span>Responsive</span></div></article>
+          <article class="project-card"><div class="project-visual visual-commerce"><div class="shop-card"><div class="shop-image"><div class="shoe-shape"></div></div><div class="shop-lines"><i></i><i></i><i></i></div><div class="shop-price">$89.00 <span>↗</span></div></div><span class="visual-badge">02 / E-COMMERCE</span></div><div class="project-info"><div><p class="project-type">WEB DESIGN · UI</p><h3>Forma Goods</h3><p>A minimal storefront concept for a modern everyday essentials brand.</p></div><a class="round-link" href="#contact" aria-label="Ask me about Forma Goods">↗</a></div><div class="project-tags"><span>Flexbox</span><span>Product UI</span></div></article>
+          <article class="project-card"><div class="project-visual visual-mobile"><div class="phone-frame"><div class="phone-notch"></div><div class="phone-greeting">Good morning,<br><b>Jamie ✦</b></div><div class="phone-progress"><span></span><span></span><span></span></div><div class="phone-task"></div><div class="phone-task short"></div><div class="phone-nav"><i></i><i></i><i></i><i></i></div></div><span class="visual-badge">03 / PRODUCTIVITY</span></div><div class="project-info"><div><p class="project-type">INTERACTION · PROTOTYPE</p><h3>Daymark Planner</h3><p>A calm daily planning experience designed to help people focus on what matters.</p></div><a class="round-link" href="#contact" aria-label="Ask me about Daymark Planner">↗</a></div><div class="project-tags"><span>Mobile-first</span><span>Interaction</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-panel"><div class="contact-orb"></div><p class="eyebrow">04 / YOUR TURN</p><h2>Have a good idea?<br><span class="gradient-text">Let's build it.</span></h2><p class="contact-copy">I'm always happy to talk about thoughtful products, creative teams, or an opportunity to make something useful.</p><a class="button button-primary" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a><div class="contact-socials"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">A</span><span>alex<span class="brand-dot">.</span></span></a><p>Designed with intention. Built with curiosity.</p><p>© <span id="year"></span> Alex Morgan</p></div></footer>
+  <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><span class="theme-icon" aria-hidden="true">☼</span></button>
+</body>
+</html>
